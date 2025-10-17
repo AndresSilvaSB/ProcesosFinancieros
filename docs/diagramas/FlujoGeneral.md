@@ -3,45 +3,38 @@
 ## Diagrama de flujo
 ```mermaid
 flowchart TD
-    A([Inicio: Correo de Stefanie]) --> B[Revisar datos en el correo]
+    A([Inicio: Santi recibe correo]) --> B[Identificar tipo de correo<br/>por remitente y contenido]
     
-    B --> C{¿Correo contiene<br/>todos los datos<br/>requeridos?}
+    B --> C{¿Qué tipo de<br/>correo es?}
     
-    C -->|No| D[Responder correo<br/>solicitando datos faltantes]
-    D --> E[Marcar como pendiente<br/>y continuar con otros]
-    E --> F{¿Respuesta<br/>recibida?}
-    F -->|No| E
-    F -->|Sí| B
+    C -->|Stefanie<br/>Operaciones| D[Proceso:<br/>AVALÚOS]
+    C -->|Alejandro<br/>El Tiempo| E[Proceso:<br/>EL TIEMPO]
+    C -->|Lina<br/>Comercialización| F[Proceso:<br/>COMERCIALIZACIÓN]
+    C -->|Negociaciones<br/>Especiales| G[Proceso:<br/>NEGOCIACIONES]
+    C -->|Acabados| H[Proceso:<br/>ACABADOS]
     
-    C -->|Sí| G[Extraer datos del correo:<br/>• Código gestionador<br/>• Nombre gestionador<br/>• Producto a facturar<br/>• Valor antes IVA<br/>• Valor post IVA<br/>• Total factura<br/>• N° publicaciones]
+    D --> I[Registrar en Google Forms/Sheets<br/>correspondiente]
+    E --> I
+    F --> I
+    G --> I
+    H --> I
     
-    G --> H{¿Es uno de los<br/>3 clientes<br/>frecuentes?}
+    I --> J{¿Datos completos<br/>y correctos?}
     
-    H -->|Sí| I[Completar manualmente<br/>desde notas copy/paste:<br/>• Nombre<br/>• Correo<br/>• Documento<br/>• Dirección<br/>• Ciudad<br/>• Teléfono]
+    J -->|Sí| K[Compartir con equipo<br/>de facturación]
+    J -->|No - Falta info| L[Dejar pendiente y<br/>solicitar datos faltantes]
     
-    H -->|No - Cliente nuevo| J[Verificar si incluye RUT]
-    J --> K{¿Tiene RUT?}
-    K -->|No| D
-    K -->|Sí| I
+    L --> M{¿Respuesta<br/>recibida?}
+    M -->|Sí| I
+    M -->|No| N[Continuar con<br/>otros correos]
     
-    I --> L[Llenar Google Forms<br/>con toda la información]
+    K --> O[Facturación completa<br/>campos finales]
+    O --> P([Fin: Proceso completado])
     
-    L --> M[Forms registra automáticamente<br/>en Google Sheets]
+    N -.Retomar después.-> M
     
-    M --> N[Validar integridad y<br/>consistencia de datos]
-    
-    N --> O{¿Datos correctos?}
-    O -->|No| P[Corregir en Forms/Sheets]
-    P --> N
-    
-    O -->|Sí| Q[Dejar campos vacíos para<br/>equipo de facturación:<br/>• N° de factura]
-    
-    Q --> R[Compartir/Notificar a<br/>equipo de facturación]
-    
-    R --> S([Fin: Avalúo registrado<br/>Pendiente de facturación])
-    
-    style A fill:#e1f5ff
-    style S fill:#e1f5ff
-    style D fill:#ffe1e1
-    style P fill:#fff4e1```
-
+    style D fill:#e1f5ff
+    style E fill:#fff4e1
+    style F fill:#ffe1f5
+    style G fill:#e1ffe1
+    style H fill:#f5e1ff
