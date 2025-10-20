@@ -1,3 +1,18 @@
+##  sub-diagrama de COMERCIALIZACIÓN.
+### 📋 Características:
+
+1. Diferencia entre correos de "seguimiento" vs "solicitud nueva"
+2. Muestra los dos sub-tipos: BRPs y Constructoras
+3. Ambos se procesan igual (mismo formulario)
+4. Incluye validación de datos
+
+### Puntos clave:
+
+✅ Correos separados para BRPs y Constructoras
+
+✅ Mismo proceso para ambos tipos
+
+⚠️ Confirmar: Campos específicos que cambian entre tipos
 ```mermaid
 flowchart TD
     A([Inicio: Correo de Lina]) --> B[Identificar tipo de correo]
