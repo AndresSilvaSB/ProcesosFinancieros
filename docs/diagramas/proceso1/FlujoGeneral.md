@@ -1,6 +1,12 @@
 # Proceso para facturación correos 
 
 ## Diagrama de flujo
+### Puntos clave:
+
+1. Santi identifica por remitente/contenido
+2. Cada color representa un tipo de proceso diferente
+3. Muestra el ciclo cuando falta información (deja pendiente, solicita, retoma)
+4. Termina cuando facturación completa el proceso
 ```mermaid
 flowchart TD
     A([Inicio: Santi recibe correo]) --> B[Identificar tipo de correo<br/>por remitente y contenido]
