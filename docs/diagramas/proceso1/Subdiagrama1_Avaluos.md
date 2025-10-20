@@ -10,7 +10,9 @@
 ### Puntos pendientes de confirmar
 
 ✅ Remitente principal: Stefanie
+
 ⚠️ Confirmar: Si N° publicaciones viene en el correo
+
 ⚠️ Confirmar: Los 3 clientes frecuentes y cómo los identifica
 ```mermaid
 flowchart TD
