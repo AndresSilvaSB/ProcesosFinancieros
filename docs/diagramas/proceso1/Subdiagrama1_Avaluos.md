@@ -1,3 +1,17 @@
+## sub-diagrama de AVALÚOS.
+### 📋 Características:
+
+1. Muestra el ciclo de solicitud de datos faltantes
+2. Diferencia entre clientes frecuentes y nuevos
+3. Incluye la validación de RUT para clientes nuevos
+4. Flujo de validación de integridad de datos
+5. Termina cuando queda listo para facturación
+
+### Puntos pendientes de confirmar
+
+✅ Remitente principal: Stefanie
+⚠️ Confirmar: Si N° publicaciones viene en el correo
+⚠️ Confirmar: Los 3 clientes frecuentes y cómo los identifica
 ```mermaid
 flowchart TD
     A([Inicio: Correo de Stefanie]) --> B[Revisar datos en el correo]
