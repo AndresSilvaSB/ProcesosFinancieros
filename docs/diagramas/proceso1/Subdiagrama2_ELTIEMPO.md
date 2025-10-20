@@ -1,3 +1,19 @@
+## Sub-Diagrama EL TIEMPO
+### 📋 Características:
+
+1. Proceso mensual (fin de mes)
+2. Descarga y extrae datos del PDF
+3. Acceso directo a Google Sheets (sin formulario)
+4. Destaca que NO tiene IVA (diferencia clave vs otros procesos)
+5. Incluye la descripción del número de cobros
+
+### Puntos pendientes de confirmar (con la info que me diste):
+
+⚠️ Confirmar: Formato del PDF siempre igual
+
+⚠️ Confirmar: Si hace copy/paste o transcripción manual
+
+⚠️ Confirmar: Formato exacto de la descripción de cobros
 ```mermaid
 flowchart TD
     A([Inicio: Correo de Alejandro<br/>fin de mes]) --> B[Descargar PDF adjunto<br/>con conciliación]
