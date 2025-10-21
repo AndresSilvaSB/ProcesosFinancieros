@@ -1,3 +1,15 @@
+## sub-diagrama de NEGOCIACIONES ESPECIALES.
+## 📋 Características:
+
+1. Correos de diferentes personas (no estandarizado)
+2. Incluye todos los campos de la imagen que compartiste
+3. Flujo similar a los demás pero con datos específicos de negociaciones
+4. Registro en Forms → Sheets/Drive
+
+## Puntos pendientes de confirmar:
+
+⚠️ Confirmar: Todos los datos vienen en el correo
+⚠️ Confirmar: Validaciones especiales que hace Santi
 ```mermaid
 flowchart TD
     A([Inicio: Correo de<br/>diferentes personas]) --> B[Revisar datos del correo]
