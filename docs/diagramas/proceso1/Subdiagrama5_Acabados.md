@@ -1,3 +1,14 @@
+## sub-diagrama de ACABADOS 
+
+### 📋 Características:
+
+1. Correos esporádicos (~1 por mes)
+2. SIN formulario - acceso directo a Google Sheets
+
+### Puntos pendientes de confirmar:
+
+⚠️ Confirmar: Si los campos son similares a otros procesos
+⚠️ Confirmar: Quiénes son los remitentes típicos
 ```mermaid
 flowchart TD
     A([Inicio: Correo de<br/>diferentes personas]) --> B[Revisar datos del correo]
